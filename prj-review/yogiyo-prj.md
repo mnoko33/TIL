@@ -1,6 +1,4 @@
-### Overview
-
-------
+## Overview
 
 ##### 1. Express
 
@@ -12,13 +10,11 @@
 
 ##### 5. bcrypt
 
-##### 6. middlewear
+##### 6. middlewear 
 
 
 
-
-
-##### 1. Express
+### 1. Express
 
 ------
 
@@ -45,7 +41,7 @@
 
 
 
-##### 2. sequelize
+### 2. sequelize
 
 ------
 
@@ -63,9 +59,7 @@
 
 
 
-
-
-##### 3. Router
+### 3. Router
 
 ------
 
