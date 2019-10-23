@@ -12,6 +12,10 @@
 
 ##### 6. middlewear 
 
+##### 7. CORS
+
+##### 8. Solapi
+
 
 
 ### 1. Express
