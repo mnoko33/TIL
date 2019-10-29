@@ -7,7 +7,7 @@
        where: { key: value }
    })
    
-   // result = [instance, isCreated]
+   // result = [instance(Object), isCreated(Boolean)]
    ```
 
 2. `findAll` : 조건을 만족하는 모든 인스턴스를 리스트로 반환하는 것으로 조건에 맞는 여러 가지의 value를 정할 수 있다.
