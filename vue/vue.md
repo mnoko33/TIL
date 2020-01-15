@@ -126,3 +126,7 @@ vm.b = 2 // vm.b는 반응형이 아니다
 <div v-on:scroll.passive="onScroll">...</div>
 ```
 
+
+
+# 컴포넌트
+
