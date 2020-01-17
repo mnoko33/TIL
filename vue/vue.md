@@ -43,6 +43,26 @@ computed: {
 
  
 
+# class에 동적으로 바인딩
+
+클래스를 동적으로 토글하기 위해 `v-bind:class`에 객체를 전달할 수 있다
+
+```html
+<div v-bind:class="{ active: isActive }">
+    
+</div>
+```
+
+```js
+data: {
+    isActive: true
+}
+```
+
+isActive가 true면 class="active"가 존재하고 false일 경우 해당 클래스는 존재하지 않는다
+
+
+
 # Vue가 감지하지 못하는 변형
 
 **1. 배열 변경**
