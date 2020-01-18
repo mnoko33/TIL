@@ -148,6 +148,42 @@ vm.b = 2 // vm.b는 반응형이 아니다
 
 
 
-# 컴포넌트
+# 슬롯(slot)
 
-zz
+의미와 왜 사용하는지는 모르겠는 슬롯
+
+```html
+<app-layout>
+  <h1 slot="header">여기에 페이지 제목이 위치합니다</h1>
+
+  <p>메인 컨텐츠의 단락입니다.</p>
+  <p>하나 더 있습니다.</p>
+
+  <p slot="footer">여기에 연락처 정보입니다.</p>
+</app-layout>
+```
+
+```html
+<app-layout>
+	<header>
+    	<h1>여기에 페이지 제목이 위치합니다</h1>
+    </header>
+    <main>
+    	<p>메인 컨텐츠의 단락입니다.</p>
+  		<p>하나 더 있습니다.</p>
+    </main>
+    <footer>
+    	<p>
+            여기에 연락처 정보입니다
+        </p>
+    </footer>
+</app-layout>
+```
+
+
+
+# props
+
+
+
+# event bus
