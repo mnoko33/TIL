@@ -184,6 +184,28 @@ vm.b = 2 // vm.b는 반응형이 아니다
 
 # props
 
+```js
+props: {
+  title: String,
+  likes: Number,
+  isPublished: Boolean,
+  commentIds: Array,
+  author: Object,
+  callback: Function,
+  contactsPromise: Promise // or any other constructor
+}
+```
+
+props는 동적으로 할당할 수 있다
+
+```html
+<blog-post v-bind:title="post.title"></blog-post>
+
+<blog-post v-bind:title="post.title + ' by ' + post.author.name"
+```
+
+
+
 
 
 # event bus
