@@ -62,7 +62,7 @@ def quick_sort3(arr, start, end):
     quick_sort3(arr, initial_start, start - 1)
     quick_sort3(arr, start, initial_end)
 
-arr = [14, 2, 5, 22, 222, 1, 77, 84, 3]
+arr = [14, 2, 5, 22, 222, 1, 22, 77, 84, 22, 3]
 
 quick_sort3(arr, 0, len(arr)-1)
 print()

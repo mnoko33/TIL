@@ -208,7 +208,7 @@ props는 동적으로 할당할 수 있다
 
 
 
-# event bus
+# event bus;
 
 
 
