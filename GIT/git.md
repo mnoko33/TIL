@@ -44,5 +44,37 @@
 
 
 
+# git flow
 
+## 1. branch CRUD
+
+### 1. Create
+
+* `git branch [branch name]` : 브랜치 생성
+* 👋 `git checkout -b [branch name]` : 브랜치 생성 후 해당 브랜치로 이동
+* 👍 `git checkout -b [branch name] [remote branch name]` : 원격 브랜치에서 새로운 브랜치를 만들어내고 연동 
+* 👍 `git checkout -t [remote branch name]` : remote 브랜치를 그대로 복사해오고 연동
+* `git push origin [branch name]` : remote에 브랜치 생성
+* `git checkout -tb [new local branch name] origin/[new local branch name]`  로컬 브랜치를 생성하고 remote 브랜치와 연동
+
+### 2. Read
+
+* `git branch`: local
+* `git branch -r` : remote
+* `git branch -a ` : remote + local
+
+### 3. Update
+
+* `git pull` : 모든 사항 업데이트
+* `git remote prune origin` : remote에서 삭제한 브랜치 업데이트
+
+* `git branch -u origin HEAD` : local에서 만든 branch를 remote에 적용
+* `git push origin [branch name]` : local 브랜치를 remote로 push
+* 
+
+### 4. Delete
+
+* `git branch -delete [branch name]` : local 브랜치 삭제
+* `git branch -D [branch name]` : commit 이력을 무시하고 삭제
+* `git push origin :[branch name]` : local에서 삭제한 브랜치를 remote에서도 삭제
 
