@@ -46,16 +46,26 @@
 
 # git flow
 
-## 1. branch CRUD
+## branch CRUD
 
 ### 1. Create
 
 * `git branch [branch name]` : 브랜치 생성
+
 * 👋 `git checkout -b [branch name]` : 브랜치 생성 후 해당 브랜치로 이동
+
 * 👍 `git checkout -b [branch name] [remote branch name]` : 원격 브랜치에서 새로운 브랜치를 만들어내고 연동 
+
 * 👍 `git checkout -t [remote branch name]` : remote 브랜치를 그대로 복사해오고 연동
+
 * `git push origin [branch name]` : remote에 브랜치 생성
-* `git checkout -tb [new local branch name] origin/[new local branch name]`  로컬 브랜치를 생성하고 remote 브랜치와 연동
+
+* 👍 이것을 애용하자!!
+
+  ```
+  git checkout -b [new local branch name] origin/[remote branch name]
+  git pull origin master
+  ```
 
 ### 2. Read
 
@@ -78,3 +88,27 @@
 * `git branch -D [branch name]` : commit 이력을 무시하고 삭제
 * `git push origin :[branch name]` : local에서 삭제한 브랜치를 remote에서도 삭제
 
+
+
+# git log
+
+* `git log -n` : 최근 n개의 log 보기
+
+* `git log -p --word-diff --stat` : diff 내용 같이 보기
+
+  |     옵션      | 설명                                                         |
+  | :-----------: | :----------------------------------------------------------- |
+  |     `-p`      | 각 commit의 diff결과를 줄 단위로 보여줍니다.                 |
+  | `--word-diff` | `-p`옵션과 같이 사용하면 diff결과를 단어 단위로 보여줍니다. 변경된 단어 단위별로 [- -]{+ +}와 같이 괄호로 쌓아 보여줍니다. |
+  |   `--stat`    | 각 commit의 변경사항에 대한 통계정보를 보여줍니다.           |
+  | `--shortstat` | 각 commit의 변경사항에 대한 통계정보중 변경/추가/삭제 개수만 보여줍니다. |
+
+*  ` git log --pretty=[OPTION]`  : 출력 내용 형식 변경
+
+  * `--pretty OPTION` 
+    * `online`
+    * `short`
+    * `full`
+    * `fuller`
+
+* `git log --graph` : log를 그래프로 보기 `--pretty=oneline` 과 쓰자
